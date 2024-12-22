@@ -1,0 +1,107 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+    height: 80px;
+    width: 100%;
+    background-color: #f0f0f0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    height: 60px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.nav-links a:hover {
+    color: red;
+}
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+
+/* Content styles */
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem;
+}
+
+.h2 {
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.hotel-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hotel-item {
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 1px 1px 10px #4e4e4e, -1px -1px 10px #4e4e4e;
+}
+
+.hotel-item img {
+    max-width: 100%; /* Ensure the image width fits within its container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the container without stretching */
+    margin-bottom: 1rem;
+}
+
+
+.a1 {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Footer */
+.footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 10px 0;
+}

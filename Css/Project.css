@@ -1,0 +1,319 @@
+  /* Reset CSS */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    
+}
+
+/* Header */
+.header {
+    height: 80px;
+    width: 100%;
+    background-color: #f0f0f0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    height: 60px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333; /* Updated font color */
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.nav-links a:hover {
+    color: #ff5722; /* Updated hover color */
+}
+
+
+/* Adjust margins and add hover effect */
+.image-container {
+    max-width: 1200px; /* Adjust maximum width */
+    margin: 120px auto; /* Reduce margins and center the container */
+    overflow: hidden; /* Hide overflow to prevent shadow clipping */
+    transition: transform 0.3s ease; /* Add transition for smooth hover effect */
+  }
+  
+  
+  
+
+  /* Apply border radius and box shadow */
+  .image-container img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove default inline behavior */
+    border-radius: 8px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+  
+
+
+  .content-container {
+    flex-grow: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    height: 170px;
+    margin-top: 20px;
+  }
+  
+  .title {
+    margin-top: 0;
+  }
+  
+  .subtitle {
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.2s ease; /* Add transition for smooth scaling */
+}
+
+.button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Scale the button by 5% when hovered */
+}
+
+
+.form-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-group {
+    flex: 1 0 45%;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+
+
+/* Content */
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
+.h21,
+.h22,
+.h26 {
+    margin-top: 120px;
+    font-size: 30px;
+    color: #333; /* Updated font color */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.ul1,
+.ul2 {
+    font-size: 20px;
+    color: #555; /* Updated font color */
+    list-style: none;
+    padding-left: 0;
+}
+.h21:before {
+    content: none; /* Hide counter */
+}
+
+.ul1 li,
+.ul2 li {
+    margin-bottom: 10px;
+}
+
+.ul1 li:before,
+.ul2 li:before {
+    content: "•";
+    display: inline-block;
+    margin-right: 10px;
+    color: #555; /* Updated bullet color */
+}
+
+.governorates .ul123 li span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.governorates .ul123 li:hover span {
+    transform: translateY(0);
+}
+
+
+.governorates .ul123 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none; /* Remove list decoration */
+    padding: 0;
+
+}
+
+.governorates .ul123 li {
+    flex-basis: calc(33.33% - 10px); /* Adjust the width as needed */
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block; /* Change display to inline-block */
+    vertical-align: top; /* Align inline-block elements to the top */
+    margin-bottom: 20px;
+
+}
+
+.governorates .ul123 li:nth-child(3n+1) {
+    margin-right: 20px; /* Add margin after every third item */
+}
+
+.governorates .ul123 li img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.adv {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e61e43;
+    margin-top: 20px ;
+    height: 170px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+.adv-0{
+
+    margin-top: 40px;
+    margin-left: 20px;
+    color: white;
+}
+
+
+.rounded-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#a1122c; /* Or any other suitable color */
+    border-radius: 8px; /* Rounded corners */
+    height: 150px;
+    width: 520px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.adv-1 h3{
+    font-size: 18px;
+    margin-left: 10px;
+    color: white;
+}
+.adv img{
+
+width: 50px;
+height: 50px;
+}
+
+
+.adv-2 h3{
+    font-size: 18px;
+    margin-left: 10px;
+    color: white;
+}
+.adv-3 h3{
+    font-size: 18px;
+    margin-left: 10px;
+    color: white;
+}
